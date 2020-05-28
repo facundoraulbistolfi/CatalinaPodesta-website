@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Catalina Podestá e Hijos</title>
+    <meta name="description" content="Sitio web para Catalina Podestá e Hijos S.A." />
+    <meta name="author" content="Facundo Raúl Bistolfi" />
+    <title>Catalina Podestá e Hijos S.A.</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -26,7 +26,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Catalina Podestá e Hijos</a><button
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Catalina Podestá e Hijos S.A.</a><button
                 class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -45,7 +45,7 @@
             <div class="row h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-10 align-self-end">
                     <img class="img-thumbnail img-logo js-scroll-trigger" src="./assets/img/logo.png" alt="logo">
-                    <h1 class="text-uppercase text-white font-weight-bold">Catalina Podestá e Hijos
+                    <h1 class="text-uppercase text-white font-weight-bold">Catalina Podestá e Hijos S.A.
                     </h1>
                     <hr class="divider my-4" />
                 </div>
@@ -116,29 +116,57 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="mt-0">Contacto</h2>
                     <hr class="divider my-4" />
-                    <p class="text-muted mb-5">Horario de atención: Lunes a Viernes de 8 hs a 17 hs</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                    <i class="fas fa-map-marked-alt fa-lg mb-3 text-muted"></i>
-                    <div>Mariano Santamaria 3136 (1754) San Justo</div>
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="row mb-3">
+                        <i class="fas fa-clock fa-lg mr-3 text-muted"></i>
+                        <div>Horario de atención: Lunes a Viernes de 8 hs a 17 hs</div>
+                    </div>
+                    <div class="row mb-3">
+                        <i class="fas fa-map-marked-alt fa-lg mr-3 text-muted"></i>
+                        <a href="https://goo.gl/maps/7c415YnTCcQZ51zKA" target="_blank">Mariano Santamaria 3136
+                            (1754) San Justo</a>
+                    </div>
+                    <div class="row mb-3">
+                        <i class="fas fa-phone fa-lg mr-3 text-muted"></i>
+                        <div>4651-1072 / 4441-1333</div>
+                    </div>
+                    <div class="row mb-3">
+                        <i class="fas fa-envelope fa-lg mr-3 text-muted"></i>
+                        <a class="d-block" href="mailto:info@catalinapodesta.com">info@catalinapodesta.com</a>
+                    </div>
                 </div>
-                <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                    <i class="fas fa-phone fa-lg mb-3 text-muted"></i>
-                    <div>4651-1072 / 4441-1333</div>
+                <div class="col">
+                    <form action="src/enviar_email.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="mail@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea class="form-control" id="message" rows=5 cols=30 name="message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="reset" class="btn btn-outline-primary">Borrar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
                 </div>
-                <div class="col-lg-4 mr-auto text-center">
-                    <i class="fas fa-envelope fa-lg mb-3 text-muted"></i>
-                    <a class="d-block"
-                        href="mailto:cpencuadernaciones@speedy.com.ar">cpencuadernaciones@speedy.com.ar</a>
-                </div>
-            </div>
-            <div>
-                <iframe class="mapa"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.948482216666!2d-58.56555098556062!3d-34.68124968043939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc6250f7e4269%3A0xb29d27e33444a2c0!2sCatalina%20Podesta%20e%20Hijos%20S.A.!5e0!3m2!1ses!2sar!4v1590198743663!5m2!1ses!2sar"></iframe>
+                </form>
             </div>
         </div>
+        <div class="map">
+            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.948482216666!2d-58.56555098556062!3d-34.68124968043939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc6250f7e4269%3A0xb29d27e33444a2c0!2sCatalina%20Podesta%20e%20Hijos%20S.A.!5e0!3m2!1ses!2sar!4v1590198743663!5m2!1ses!2sar">
+            </iframe>
+        </div>
+        </div>
+
     </section>
     <!-- Footer-->
     <footer class="bg-footer py-5">

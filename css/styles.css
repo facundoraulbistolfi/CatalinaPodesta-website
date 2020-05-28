@@ -216,11 +216,13 @@ img.img-muestra{
   margin-bottom: 15px;
 }
 
-iframe.mapa{
-  margin-top: 15px;
-  width: 100%;
-  border:0;
+
+/* Map */
+.map {
+  height: 15rem;
 }
+
+
 
 svg {
   overflow: hidden;

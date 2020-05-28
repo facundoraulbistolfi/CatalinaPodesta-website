@@ -66,7 +66,7 @@ if(isset($_POST['email'])) {
     @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
 <!-- Mensaje de Éxito-->
-Muchas Gracias! Proximamente Estaremos en Contacto.
+window.location.href='http://www.catalinapodesta.com';
 <?php 
 }
 ?>

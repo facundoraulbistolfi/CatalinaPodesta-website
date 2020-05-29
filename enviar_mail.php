@@ -1,4 +1,7 @@
 <?php
+
+echo "holi";
+
 if(isset($_POST['email'])) {
 
     // Edita las líneas siguientes con tu dirección de correo y asunto

@@ -4,7 +4,10 @@
 
 echo "holi";
 
-echo $_POST;
+for($x = 0; $x < $_POST; $x++) {
+  echo $cars[$x];
+  echo "<br>";
+}
 
 if(isset($_POST['email'])) {
 

@@ -4,7 +4,7 @@
 
 echo "holi";
 
-echo $_POST
+echo $_POST;
 
 if(isset($_POST['email'])) {
 

@@ -1,6 +1,10 @@
+
+
 <?php
 
 echo "holi";
+
+echo $_POST
 
 if(isset($_POST['email'])) {
 

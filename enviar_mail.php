@@ -9,7 +9,7 @@ for($x = 0; $x < $_POST; $x++) {
   echo "<br>";
 }
 
-echo "email"
+echo "email";
 
 
 if(isset($_POST['email'])) {

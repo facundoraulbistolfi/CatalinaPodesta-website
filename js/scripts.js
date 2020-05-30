@@ -59,9 +59,11 @@
         alert(res);
         $('#buttonForm').removeAttr("disabled");
         $('#buttonForm').html('Enviar');
+
       }
     });
     $('#formContacto').trigger("reset");
+    grecaptcha.reset();
   });
 
 })(jQuery); // End of use strict

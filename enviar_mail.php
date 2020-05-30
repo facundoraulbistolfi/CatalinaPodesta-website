@@ -1,5 +1,3 @@
-
-
 <?php
 
 require_once "recaptchalib.php";
@@ -19,8 +17,6 @@ if ($_POST["g-recaptcha-response"]) {
 }
 
 if ($response != null && $response->success) {
-    echo "Hi " . $_POST["name"] . " (" . $_POST["email"] . "), thanks for submitting the form!";
-
     if (isset($_POST['email'])) {
 
         // Edita las líneas siguientes con tu dirección de correo y asunto
@@ -92,7 +88,8 @@ if ($response != null && $response->success) {
         @mail($email_to, $email_subject, $email_message, $headers);
 
         // Mensaje de Éxito
-        echo "mensaje enviado";
+
+        echo "Gracias por contactarnos " . $_POST["name"] . ". Su consulta sera contestada a " . $_POST["email"] . " a la brevedad";
     }
 }
 ?>

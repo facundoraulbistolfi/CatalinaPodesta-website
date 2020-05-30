@@ -60,4 +60,19 @@
     }
   });
 
+  $("form").submit(
+    function () {
+      console.log("A ver que onda");
+      var str = $(this).serialize();
+      $.ajax(
+        'enviar_mail.php', str, function (result) {
+          alert(result); // The result variable will contain any text echoed by getResult.php
+        }
+      )
+      console.log("Deberia de haber salido un alert");
+      return false;
+    });
+
+
+
 })(jQuery); // End of use strict

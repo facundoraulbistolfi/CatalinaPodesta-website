@@ -57,9 +57,7 @@
       data: $('form').serialize(),
       success: function (res) {
         alert(res);
-        $('#buttonForm').removeAttr("disabled");
         $('#buttonForm').html('Enviar');
-
       }
     });
     $('#formContacto').trigger("reset");

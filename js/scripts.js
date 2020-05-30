@@ -60,7 +60,25 @@
     }
   });
 
-  $('form').submit(
+  $('form').on('submit', function (e) {
+
+    e.preventDefault();
+
+    $.ajax({
+      type: 'post',
+      url: 'enviar_mail.php',
+      data: $('form').serialize(),
+      success: function (res) {
+        alert(res);
+      }
+    });
+
+
+
+  });
+
+  /*
+  (
     function () {
       console.log("A ver que onda");
       var str = $(this).serialize();
@@ -72,7 +90,7 @@
       console.log("Deberia de haber salido un alert");
       return false;
     });
-
+  */
 
 
 })(jQuery); // End of use strict

@@ -58,9 +58,7 @@
         alert(res);
       }
     });
-
-
-
+    $('#formContacto').trigger("reset");
   });
 
   /*

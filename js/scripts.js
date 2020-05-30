@@ -64,5 +64,6 @@
 
 
 function enableBtn() {
+  console.log("wtf esto men");
   document.getElementById("buttonForm").disabled = false;
 }

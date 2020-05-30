@@ -47,7 +47,6 @@
 
   $('#formContacto').on('submit', function (e) {
 
-    console.log("Envio contacto");
     e.preventDefault();
 
     $.ajax({

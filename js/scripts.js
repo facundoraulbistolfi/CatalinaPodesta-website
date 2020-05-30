@@ -60,7 +60,7 @@
     }
   });
 
-  $("form").submit(
+  $('form').submit(
     function () {
       console.log("A ver que onda");
       var str = $(this).serialize();
